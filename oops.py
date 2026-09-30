@@ -18,7 +18,7 @@ print(c1.year)
 
 #__init__function (constructor) - it is a special function that is called when an object of class is created
 class Person:
-    def __init__(self, name, marks):#the self parameter is a reference to the current instance of the class
+    def __init__(self, name, marks): #the self parameter is a reference to the current instance of the class
         self.name = name
         self.marks = marks
         print("object is created")
@@ -48,7 +48,7 @@ s1.welcome()
 print(s1.get_marks())
 
 class Student:
-    def __init__(self, name, marks1, marks2, marks3):#can also make list of marks instead of 3 parameters(just assign marks parameter here and give 3 valuess in list, in the object)
+    def __init__(self, name, marks1, marks2, marks3): #can also make list of marks instead of 3 parameters(just assign marks parameter here and give 3 valuess in list, in the object)
         self.name = name
         self.marks1 = marks1
         self.marks2 = marks2
@@ -62,7 +62,7 @@ s2 = Student("sarthak", 70, 60 , 100)
 print("average of sarthak: ", s2.avg())
 s3 = Student("kalpana", 100, 90, 90)
 print("average of kalpana: ", s3.avg())
-'''
+
 #static methods - they are methods that belong to the class rather than the object of the class, they can be called without creating an object of the class
 class Math:
     @staticmethod #decorator to define static method
@@ -73,9 +73,4 @@ class Math:
         return a - b
 print(Math.add(10, 5)) #calling static method without creating object of class
 print(Math.subtract(10, 5))
-
-#four pillars of OOPS - encapsulation, inheritance, polymorphism, abstraction
-#encapsulation = wrapping data and functions into a single unit.
-# abstraction = hiding the implementation details of a class and showing only the essential features to the user.     
-#inheritance =
-#polymorphism = 
+'''
